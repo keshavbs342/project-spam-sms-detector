@@ -26,6 +26,20 @@ Ensure you have Python installed on your local machine. You will need to install
 ```bash
 pip install pandas scikit-learn
 ```
+
+### Running the Project Locally
+
+1. Clone this repository to your local environment.
+2. Ensure the `spam.csv` dataset is located in the root directory alongside the main script.
+3. Execute the Python script:
+
+```bash
+python main.py
+
+```
+
+---
+
 ## 👨‍💻 Author
 
 **Keshav Shukla**
