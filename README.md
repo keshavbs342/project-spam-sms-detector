@@ -1,24 +1,27 @@
-# 📱 SMS Spam Detection using Machine Learning
+# 📱 SMS Spam Detection Pipeline
 
-## Overview
+## 🎯 Project Overview
+This repository contains a robust Natural Language Processing (NLP) machine learning pipeline designed to automatically classify SMS messages as either **Spam** (unwanted/promotional) or **Ham** (normal/safe). By leveraging supervised learning algorithms, the system provides a computational defense against unwanted messaging, showcasing practical applications of text classification and predictive modeling.
 
-This project is a Natural Language Processing (NLP) machine learning model built in Python. It automatically reads text messages and classifies them as either "Spam" (unwanted) or "Ham" (safe).
+## 🛠️ Technology Stack
+* **Language:** Python
+* **Data Manipulation & Cleaning:** Pandas
+* **Machine Learning Framework:** Scikit-Learn
+* **Algorithm:** Multinomial Naive Bayes (MultinomialNB)
+* **Text Processing:** TF-IDF Vectorizer (Term Frequency-Inverse Document Frequency)
 
-## 🛠️ Technologies Used
+## 🧠 System Architecture & Workflow
+1. **Data Preprocessing:** The raw SMS dataset is cleaned, extracting the relevant text data and converting string labels into binary numerical targets (`0` for Ham, `1` for Spam).
+2. **Feature Extraction:** Using `TfidfVectorizer`, standard English text is transformed into mathematical matrices. This process evaluates word frequency while filtering out uninformative standard English "stop words".
+3. **Model Training:** A Naive Bayes classifier is trained on the vectorized training data to recognize probabilistic patterns and trigger words inherent in spam vocabulary.
+4. **Prediction & Evaluation:** The trained model analyzes unseen testing data to predict classifications based on learned historical patterns.
 
-- **Python**: The core programming language.
-- **Pandas**: Used for data manipulation and cleaning.
-- **Scikit-Learn**: Used for the machine learning pipeline (Vectorization and Model Training).
+## 📊 Performance Metrics
+* **Accuracy:** The model achieved a highly accurate classification score of **96.68%** on the unseen testing dataset, demonstrating strong precision in distinguishing between legitimate and promotional messages.
 
-## 🧠 How It Works
+## 🚀 Getting Started
 
-1. **Data Preprocessing**: The raw SMS data is cleaned, and text labels are converted into binary numbers.
-2. **Feature Extraction**: Using `TfidfVectorizer`, English text is converted into numerical data, while common "stop words" are filtered out.
-3. **Model Training**: A Multinomial Naive Bayes classifier is trained on the data to recognize patterns in spam vocabulary.
-4. **Evaluation**: The model achieves an accuracy of ~97% on unseen test data.
-
-## 🚀 How to Run This Project
-
-1. Clone this repository to your local machine.
-2. Ensure you have Python installed, along with Pandas and Scikit-Learn.
-3. Run `python main.py` in your terminal.
+### Prerequisites
+Ensure you have Python installed on your local machine. You will need to install the following dependencies via your terminal:
+```bash
+pip install pandas scikit-learn
