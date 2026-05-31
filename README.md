@@ -25,3 +25,12 @@ This repository contains a robust Natural Language Processing (NLP) machine lear
 Ensure you have Python installed on your local machine. You will need to install the following dependencies via your terminal:
 ```bash
 pip install pandas scikit-learn
+```
+## 👨‍💻 Author
+
+**Keshav Shukla**
+
+*B.Tech in Electronics and Communication Engineering | Shri Ramdeobaba College of Engineering and Management*
+
+* 📧 Email: keshavbs342@gmail.com
+* 💡 Focus: Python, Natural Language Processing, and Machine Learning
