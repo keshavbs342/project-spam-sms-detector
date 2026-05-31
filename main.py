@@ -29,12 +29,12 @@ test_numbers = vectorizer.transform(message_test)
 
 # TRAIN THE MODEL
 print("Training the AI...")
-ai_brain = MultinomialNB()
-ai_brain.fit(study_numbers, label_study)
+model = MultinomialNB()
+model.fit(study_numbers, label_study)
 
 # GIVE THE TEST AND GRADE IT
 print("Taking the test...")
-guesses = ai_brain.predict(test_numbers)
+guesses = model.predict(test_numbers)
 
 grade = accuracy_score(label_test, guesses)
 print(f"Project Complete! The AI got a score of: {grade * 100:.2f}%")
